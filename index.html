@@ -4,68 +4,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Up-to-Up | Renda Extra</title>
+  <title>Up-to-Up | Renda Extra com diversão!</title>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="https://kit.fontawesome.com/d7923bcb68.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header class="masterhead">
-    <nav>
-      <a href="#download">Baixe o App</a>
-      <a href="#about">Sobre nós</a>
-      <a href="#contact">Contato</a>
-      <a href="#socials">Redes Sociais</a>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+
+      <a class="navbar-brand" href="#">Up-to-Up</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navigation">
+        <a href="#download" class="nav-item nav-link">Baixe o App</a>
+        <a href="#about" class="nav-item nav-link">Sobre nós</a>
+        <a href="#contact" class="nav-item nav-link">Contato</a>
+        <a href="#socials" class="nav-item nav-link">Redes Sociais</a>
+      </div>
     </nav>
 
-    <h1>Up-To-Up</h1>
-    <p>Tagline da empresa</p>
+    <div class="masterhead">
+      <div class="container">
+        <h1>Up-To-Up</h1>
+        <p>Renda Extra com diversão!</p>
+      </div>
+    </div>
   </header>
 
   <section id="download" class="download-section">
-    <h2>Baixe o App</h2>
-    <a href="#">
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores perspiciatis consequuntur explicabo quis
-        soluta debitis aspernatur repudiandae non tempora neque laudantium, voluptate facilis officia quasi ratione
-        natus voluptatum nihil sed.
-      </p>
-    </a>
+    <main class="container">
+      <h2>Baixe o App</h2>
+      <a href="#">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores perspiciatis consequuntur explicabo quis
+          soluta debitis aspernatur repudiandae non tempora neque laudantium, voluptate facilis officia quasi ratione
+          natus voluptatum nihil sed.
+        </p>
+      </a>
+    </main>
+
+    <aside id="ads-aside">
+      GOOGLE ADS
+    </aside>
   </section>
 
   <section id="about">
-    <h2>Sobre nós</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus iusto consectetur eius pariatur obcaecati
-      nobis laborum animi repudiandae, quidem voluptatibus? Pariatur neque quas repellat ut eius aut ratione
-      perspiciatis!</p>
-    <video src="assets/vid/lorem-ipsum.mp4" type="video/mp4" height="400px" width="100%" controls />
+    <div class="container">
+      <h2>Sobre nós</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus iusto consectetur eius pariatur
+        obcaecati
+        nobis laborum animi repudiandae, quidem voluptatibus? Pariatur neque quas repellat ut eius aut ratione
+        perspiciatis!</p>
+      <video src="assets/vid/lorem-ipsum.mp4" type="video/mp4" height="400px" width="100%" controls />
+    </div>
   </section>
 
   <section id="contact">
-    <h2>Contato</h2>
-    <form method="@" class="contact-form">
-      <label for="@">
-        Nome
-        <input type="text">
-      </label>
-      <label for="@">
-        E-mail
-        <input type="email">
-      </label>
-      <label for="@">
-        Mensagem
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-      </label>
-      <button type="submit">Enviar</button>
-    </form>
+    <div class="container">
+      <h2>Contato</h2>
+
+      <form method="@">
+        <div class="form-group">
+          <label for="@">
+            Nome
+          </label>
+          <input type="text" class="form-control">
+          <label for="@">
+            E-mail
+          </label>
+          <input type="email" class="form-control">
+          <label for="@">
+            Mensagem
+          </label>
+          <textarea class="form-control" id="" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
   </section>
 
-  <footer id="socials">
-    <a href="#">Facebook</a>
-    <a href="#">Instagram</a>
-    <a href="#">Twitter</a>
-    <a href="#">YouTube</a>
+  <footer id="socials" class="justify-content-center align-items-center">
+    <div class="social-pannel">
+      <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+    </div>
   </footer>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </html>
