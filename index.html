@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Up-to-Up | Renda Extra com diversão!</title>
+  <title>Up-to-Up | Renda extra com diversão!</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -15,7 +15,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent">
 
       <a class="navbar-brand" href="#">Up-to-Up</a>
 
@@ -25,22 +25,22 @@
       </button>
 
       <div class="navbar-collapse collapse" id="navigation">
-        <a href="#download" class="nav-item nav-link">Baixe o App</a>
-        <a href="#about" class="nav-item nav-link">Sobre nós</a>
-        <a href="#contact" class="nav-item nav-link">Contato</a>
-        <a href="#socials" class="nav-item nav-link">Redes Sociais</a>
+        <a href="#download-section" class="nav-item nav-link">Baixe o App</a>
+        <a href="#about-section" class="nav-item nav-link">Sobre nós</a>
+        <a href="#contact-section" class="nav-item nav-link">Contato</a>
+        <a href="#social-section" class="nav-item nav-link">Redes Sociais</a>
       </div>
     </nav>
 
     <div class="masterhead">
       <div class="container">
-        <h1>Up-To-Up</h1>
-        <p>Renda Extra com diversão!</p>
+        <h1 class="d-none">Up-To-Up</h1>
+        <p class="d-none">Renda Extra com diversão!</p>
       </div>
     </div>
   </header>
 
-  <section id="download" class="download-section">
+  <section id="download-section">
     <main class="container">
       <h2>Baixe o App</h2>
       <a href="#">
@@ -49,6 +49,7 @@
           soluta debitis aspernatur repudiandae non tempora neque laudantium, voluptate facilis officia quasi ratione
           natus voluptatum nihil sed.
         </p>
+        <img src="https://via.placeholder.com/400x350.jpg" alt="Imagem da interface do aplicativo">
       </a>
     </main>
 
@@ -57,22 +58,23 @@
     </aside>
   </section>
 
-  <section id="about">
+  <section id="about-section">
     <div class="container">
       <h2>Sobre nós</h2>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus iusto consectetur eius pariatur
         obcaecati
         nobis laborum animi repudiandae, quidem voluptatibus? Pariatur neque quas repellat ut eius aut ratione
-        perspiciatis!</p>
-      <video src="assets/vid/lorem-ipsum.mp4" type="video/mp4" height="400px" width="100%" controls />
+        perspiciatis!
+      </p>
+      <video src="assets/vid/video-intro.mp4" type="video/mp4" controls />
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact-section">
     <div class="container">
       <h2>Contato</h2>
 
-      <form method="@">
+      <form id="contact-form" method="@">
         <div class="form-group">
           <label for="@">
             Nome
@@ -92,12 +94,13 @@
     </div>
   </section>
 
-  <footer id="socials" class="justify-content-center align-items-center">
+  <footer id="social-section" class="justify-content-center align-items-center">
     <div class="social-pannel">
-      <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-      <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-      <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="#"><i id="i-facebook" class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i id="i-instagram" class="fab fa-instagram fa-2x"></i></a>
+      <a href="#"><i id="i-twitter" class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.youtube.com/channel/UCqkpS5t_w4yMPS17qQoHZBQ"><i id="i-youtube"
+          class="fab fa-youtube fa-2x"></i></a>
     </div>
   </footer>
 </body>
