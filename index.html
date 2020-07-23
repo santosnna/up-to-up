@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Up-to-Up | Renda Extra com diversão!</title>
+  <title>Up-to-Up | Renda extra com diversão!</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -15,9 +15,9 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent">
 
-      <a class="navbar-brand" href="#">Up-to-Up</a>
+      <a class="navbar-brand" href="#">Up-to-Up <img src="assets/img/brand.ico" alt=""></a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
         aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,31 +25,42 @@
       </button>
 
       <div class="navbar-collapse collapse" id="navigation">
-        <a href="#download" class="nav-item nav-link">Baixe o App</a>
-        <a href="#about" class="nav-item nav-link">Sobre nós</a>
-        <a href="#contact" class="nav-item nav-link">Contato</a>
-        <a href="#socials" class="nav-item nav-link">Redes Sociais</a>
+        <a href="#download-section" class="nav-item nav-link">Baixe os Apps</a>
+        <a href="#about-section" class="nav-item nav-link">Sobre nós</a>
+        <a href="#contact-section" class="nav-item nav-link">Contato</a>
+        <a href="#social-section" class="nav-item nav-link">Redes Sociais</a>
       </div>
     </nav>
 
-    <div class="masterhead">
-      <div class="container">
-        <h1>Up-To-Up</h1>
-        <p>Renda Extra com diversão!</p>
-      </div>
-    </div>
   </header>
 
-  <section id="download" class="download-section">
+  <section id="download-section">
     <main class="container">
-      <h2>Baixe o App</h2>
-      <a href="#">
+      <h2>Baixe os Apps</h2>
+      <div>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores perspiciatis consequuntur explicabo quis
-          soluta debitis aspernatur repudiandae non tempora neque laudantium, voluptate facilis officia quasi ratione
-          natus voluptatum nihil sed.
+          "Call for action" para baixar os aplicativos de renda extra.
         </p>
-      </a>
+        <h3>Click Clap</h3>
+        <p>
+          Descrição do aplicativo: Resumo dos objetivos e códigos promocionais.
+        </p>
+
+        <div>
+          <img src="assets/img/clickclap.jpg" alt="Logotipo do aplicativo Click Clap">
+          <div class="badges-app">
+            <a href="https://apps.apple.com/br/app/clipclaps-video-pk/id1331794493?mt=8">
+              <img alt=""
+                src="https://linkmaker.itunes.apple.com/en-gb/badge-lrg.svg?releaseDate=2020-02-13&kind=iossoftware&bubble=ios_apps" />
+            </a>
+            <a
+              href='https://play.google.com/store/apps/details?id=com.sanhe.clipclaps&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
+                alt='Get it on Google Play'
+                src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' />
+            </a>
+          </div>
+        </div>
+      </div>
     </main>
 
     <aside id="ads-aside">
@@ -57,47 +68,54 @@
     </aside>
   </section>
 
-  <section id="about">
+  <hr>
+
+  <section id="about-section">
     <div class="container">
       <h2>Sobre nós</h2>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus iusto consectetur eius pariatur
         obcaecati
         nobis laborum animi repudiandae, quidem voluptatibus? Pariatur neque quas repellat ut eius aut ratione
-        perspiciatis!</p>
-      <video src="assets/vid/lorem-ipsum.mp4" type="video/mp4" height="400px" width="100%" controls />
+        perspiciatis!
+      </p>
+      <video src="assets/vid/video-intro.mp4" type="video/mp4" controls />
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact-section">
     <div class="container">
       <h2>Contato</h2>
 
-      <form method="@">
+      <form id="contact-form" method="POST">
         <div class="form-group">
-          <label for="@">
+          <label for="txtName">
             Nome
           </label>
-          <input type="text" class="form-control">
-          <label for="@">
+          <input id="txtName" type="text" class="form-control" placeholder="Seu nome">
+
+          <label for="txtEmail">
             E-mail
           </label>
-          <input type="email" class="form-control">
-          <label for="@">
+          <input id="txtEmail" type="email" class="form-control" placeholder="exemplo@email.com">
+
+          <label for="taMessage">
             Mensagem
           </label>
-          <textarea class="form-control" id="" cols="30" rows="10"></textarea>
+          <textarea class="form-control" id="taMessage" cols="30" rows="10"
+            placeholder="Escreva aqui sua mensagem"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
     </div>
   </section>
 
-  <footer id="socials" class="justify-content-center align-items-center">
+  <footer id="social-section" class="justify-content-center align-items-center">
     <div class="social-pannel">
-      <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-      <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-      <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="#"><i id="i-facebook" class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i id="i-instagram" class="fab fa-instagram fa-2x"></i></a>
+      <a href="#"><i id="i-twitter" class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.youtube.com/channel/UCqkpS5t_w4yMPS17qQoHZBQ"><i id="i-youtube"
+          class="fab fa-youtube fa-2x"></i></a>
     </div>
   </footer>
 </body>
