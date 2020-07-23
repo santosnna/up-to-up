@@ -32,12 +32,12 @@
       </div>
     </nav>
 
-    <div class="masterhead">
-      <div class="container">
-        <h1 class="d-none">Up-To-Up</h1>
-        <p class="d-none">Renda Extra com diversão!</p>
-      </div>
+    <!-- <div class="masterhead"> -->
+    <div class="container">
+      <h1 class="d-none">Up-To-Up</h1>
+      <p class="d-none">Renda Extra com diversão!</p>
     </div>
+    <!-- </div> -->
   </header>
 
   <section id="download-section">
@@ -49,7 +49,7 @@
           soluta debitis aspernatur repudiandae non tempora neque laudantium, voluptate facilis officia quasi ratione
           natus voluptatum nihil sed.
         </p>
-        <img src="https://via.placeholder.com/400x350.jpg" alt="Imagem da interface do aplicativo">
+        <img src="https://via.placeholder.com/351x624.jpg" alt="Imagem da interface do aplicativo">
       </a>
     </main>
 
@@ -57,6 +57,8 @@
       GOOGLE ADS
     </aside>
   </section>
+
+  <hr>
 
   <section id="about-section">
     <div class="container">
@@ -74,20 +76,23 @@
     <div class="container">
       <h2>Contato</h2>
 
-      <form id="contact-form" method="@">
+      <form id="contact-form" method="POST">
         <div class="form-group">
-          <label for="@">
+          <label for="txtName">
             Nome
           </label>
-          <input type="text" class="form-control">
-          <label for="@">
+          <input id="txtName" type="text" class="form-control" placeholder="Seu nome">
+
+          <label for="txtEmail">
             E-mail
           </label>
-          <input type="email" class="form-control">
-          <label for="@">
+          <input id="txtEmail" type="email" class="form-control" placeholder="exemplo@email.com">
+
+          <label for="taMessage">
             Mensagem
           </label>
-          <textarea class="form-control" id="" cols="30" rows="10"></textarea>
+          <textarea class="form-control" id="taMessage" cols="30" rows="10"
+            placeholder="Escreva aqui sua mensagem"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
       </form>

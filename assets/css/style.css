@@ -13,6 +13,11 @@ header {
 
 a {
   text-decoration: none;
+  color: #404040;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 section,
@@ -21,14 +26,24 @@ aside, img {
   padding-bottom: 1em;
 }
 
+img {
+  max-width: 100vw;
+  max-height: 80vh;
+}
+
 aside {
   height: 115px;
-  background-color: red;
+  background-color: #f5f5f5;
+}
+
+hr {
+  margin: 0 2.5%;
 }
 
 video {
-  height: 255px;
-  width: 100%
+  width: 427px;
+  height: 240px;
+  margin: 0 5%;
 }
 
 footer {
@@ -42,7 +57,7 @@ footer {
 }
 
 .social-pannel>a {
-  padding: 0 .75em;
+  padding: 0 1em;
 }
 
 #download-section {
@@ -50,7 +65,7 @@ footer {
 }
 
 #about-section {
-  border-top: 1px solid black;
+
 }
 
 #contact-section {
@@ -80,6 +95,17 @@ footer {
 
 @media (min-width: 726px) {
   video {
-    width: 716px;
+    width: 640px;
+    height: 360px;
+  }
+
+  .social-pannel>a {
+    padding: 0 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  video {
+    margin: 0 20%;
   }
 }
