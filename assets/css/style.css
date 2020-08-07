@@ -37,34 +37,30 @@ hr {
 }
 
 footer {
-  height: 60px;
+  height: 100px;
   background-color: #ebebeb;
   display: flex;
 }
 
-.app-badges {
-  display: inline-block;
-  max-width: 47%;
-  padding: 2% 0;
-}
-.app-badges img {
+
+.app-badges img, .app-badges span {
   width: 100%;
-  padding: 2% 3%;
-  display: block;
+  margin: 0;
+  padding-top: 3%;
 }
 
 .video {
-  width: 427px;
-  height: 240px;
+  width: 100%;
+  height: 260px;
 }
 
 .social-pannel {
   border-top: 1px solid rgba(0, 0, 0, 0.4);
-  padding: .75em 0 .5em;
+  padding-top: 1.25em;
 }
 
 .social-pannel>a {
-  padding: 0 1em;
+  padding: 0 2em;
 }
 
 .btn-primary {
@@ -85,9 +81,8 @@ footer {
   background-color: #ebebeb;
 }
 
-#contact-form {
-  max-width: 576px;
-  margin: 0 auto;
+#form-submition-btn {
+  width: 100%;
 }
 
 #i-facebook {
@@ -104,15 +99,4 @@ footer {
 
 #i-youtube {
   color: #ff0000;
-}
-
-@media (min-width: 726px) {
-  .video {
-    width: 560px;
-    height: 315px;
-  }
-
-  .social-pannel>a {
-    padding: 0 2em;
-  }
 }
