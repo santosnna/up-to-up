@@ -9,12 +9,15 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style-mq.css">
 
   <script src="https://kit.fontawesome.com/d7923bcb68.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
 </head>
 
 <body>
   <header>
+
     <nav class="navbar navbar-expand-md navbar-light bg-transparent">
 
       <a class="navbar-brand" href="#">Up-to-Up <img src="assets/img/brand.ico" alt=""></a>
@@ -41,32 +44,37 @@
         "Call for action" para baixar os aplicativos de renda extra.
       </p>
 
-      <div class="app-badges">
-        <h3>ClipClaps</h3>
-        <img src="assets/img/clipclaps.jpg" alt="Logotipo do aplicativo Click Clap">
-        <a href="">
-          <img src="assets/img/google-play-badge.png" alt="">
-        </a>
-        <a href="">
-          <img src="assets/img/app-store-badge.png" alt="">
-        </a>
+      <div class="row">
+
+        <div class="col-6 col-md-4">
+          <div class="app-badges">
+            <h3>ClipClaps</h3>
+            <div>
+              <img src="assets/img/clipclaps.jpg" alt="Logotipo do aplicativo Click Clap">
+            </div>
+            <div>
+              <span>
+                Use o código: KGHAK20
+              </span>
+
+              <a href="">
+                <img src="assets/img/google-play-badge.png" alt="">
+              </a>
+              <a href="">
+                <img src="assets/img/app-store-badge.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <div class="app-badges">
-        <h3>ClipClaps</h3>
-        <img src="assets/img/clipclaps.jpg" alt="Logotipo do aplicativo Click Clap">
-        <a href="">
-          <img src="assets/img/google-play-badge.png" alt="">
-        </a>
-        <a href="">
-          <img src="assets/img/app-store-badge.png" alt="">
-        </a>
-      </div>
     </main>
 
     <aside id="ads-aside">
       GOOGLE ADS
     </aside>
+
   </section>
 
   <hr>
@@ -74,14 +82,22 @@
   <section id="about-section">
     <div class="container">
       <h2>Sobre nós</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus iusto consectetur eius pariatur
-        obcaecati
-        nobis laborum animi repudiandae, quidem voluptatibus? Pariatur neque quas repellat ut eius aut ratione
-        perspiciatis!
-      </p>
+      <div class="row">
 
-      <iframe src="https://www.youtube.com/embed/Jo3R7X32Hjo" class="video" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="col-12 col-lg-4">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo delectus iusto consectetur eius pariatur
+            obcaecati
+            nobis laborum animi repudiandae, quidem voluptatibus? Pariatur neque quas repellat ut eius aut ratione
+            perspiciatis!
+          </p>
+        </div>
+
+        <div class="col-12 col-lg-8">
+          <iframe src="https://www.youtube.com/embed/Jo3R7X32Hjo" class="video" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -89,36 +105,63 @@
     <div class="container">
       <h2>Contato</h2>
 
-      <form id="contact-form" method="POST">
-        <div class="form-group">
-          <label for="txtName">
-            Nome
-          </label>
-          <input id="txtName" type="text" class="form-control" placeholder="Seu nome">
+      <form id="contact-form" method="#">
+        <div class="row">
 
-          <label for="txtEmail">
-            E-mail
-          </label>
-          <input id="txtEmail" type="email" class="form-control" placeholder="exemplo@email.com">
+          <div class="col-12 col-md-4">
+            <div class="form-group">
+              <label for="txtName">
+                Nome
+              </label>
+              <input id="txtName" type="text" class="form-control" placeholder="Seu nome">
+            </div>
 
-          <label for="taMessage">
-            Mensagem
-          </label>
-          <textarea class="form-control" id="taMessage" cols="30" rows="10"
-            placeholder="Escreva aqui sua mensagem"></textarea>
+            <div class="form-group">
+              <label for="txtEmail">
+                E-mail
+              </label>
+              <input id="txtEmail" type="email" class="form-control" placeholder="exemplo@email.com">
+            </div>
+
+            <div class="form-group">
+              <label for="txtAssunto">
+                Assunto
+              </label>
+              <input id="txtAssunto" type="text" class="form-control" placeholder="Assunto">
+            </div>
+          </div>
+
+          <div class="col-12 col-md-8">
+            <div class="form-group">
+              <label for="taMessage">
+                Mensagem
+              </label>
+              <textarea class="form-control" id="taMessage" cols="30" rows="6"
+                placeholder="Escreva aqui sua mensagem"></textarea>
+            </div>
+            <button type="submit" id="form-submition-btn" class="btn btn-primary" style="width: 100%;">
+              Enviar
+            </button>
+          </div>
+
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
     </div>
   </section>
 
   <footer id="social-section" class="justify-content-center align-items-center">
     <div class="social-pannel">
-      <a href="#"><i id="i-facebook" class="fab fa-facebook fa-2x"></i></a>
-      <a href="#"><i id="i-instagram" class="fab fa-instagram fa-2x"></i></a>
-      <a href="#"><i id="i-twitter" class="fab fa-twitter fa-2x"></i></a>
-      <a href="https://www.youtube.com/channel/UCqkpS5t_w4yMPS17qQoHZBQ"><i id="i-youtube"
-          class="fab fa-youtube fa-2x"></i></a>
+      <a href="#" class="d-none"><i id="i-facebook" class="fab fa-facebook fa-2x"></i></a>
+     
+      <a href="https://www.instagram.com/uptoupcanal/">
+        <i id="i-instagram" class="fab fa-instagram fa-2x"></i>
+      </a>
+     
+      <a href="#" class="d-none><i id="i-twitter" class="fab fa-twitter fa-2x"></i></a>
+    
+      <a href="https://www.youtube.com/channel/UCqkpS5t_w4yMPS17qQoHZBQ">
+        <i id="i-youtube" class="fab fa-youtube fa-2x"></i>
+      </a>
     </div>
   </footer>
 </body>
