@@ -3,7 +3,7 @@ body {
   color: #141414;
 }
 
-header {
+header, nav {
   background-color: #FEDE0D;
 }
 
@@ -37,13 +37,14 @@ hr {
 }
 
 footer {
-  height: 100px;
+  /* height: 100px; */
+  padding-top: 1.25em;
   background-color: #ebebeb;
   display: flex;
 }
 
 
-.app-badges img, .app-badges span {
+.promoted-app, .promoted-app img, .promoted-app span {
   width: 100%;
   margin: 0;
   padding-top: 3%;
@@ -56,7 +57,7 @@ footer {
 
 .social-pannel {
   border-top: 1px solid rgba(0, 0, 0, 0.4);
-  padding-top: 1.25em;
+  padding: 1.25em 0 1.25em;
 }
 
 .social-pannel>a {
@@ -71,6 +72,14 @@ footer {
 .btn-primary:hover {
   background-color: #ff0a33;
   border-color: #ff0a33;
+}
+
+#cfa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #FF1F44;
 }
 
 #download-section {

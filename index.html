@@ -13,12 +13,13 @@
 
   <script src="https://kit.fontawesome.com/d7923bcb68.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+
 </head>
 
 <body>
   <header>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+    <nav class="navbar navbar-expand-md navbar-light">
 
       <a class="navbar-brand" href="#">Up-to-Up <img src="assets/img/brand.ico" alt=""></a>
 
@@ -39,24 +40,53 @@
 
   <section id="download-section">
     <main class="container">
-      <h2>Baixe os Apps</h2>
-      <p>
-        "Call for action" para baixar os aplicativos de renda extra.
-      </p>
+      <!-- <h2>Baixe os Apps</h2> -->
 
-      <div class="row">
+      <div id="cfa">
+        <h2 class="display-4">
+          Confira nossas dicas e comece a ganhar a dinheiro se divertindo!
+        </h2>
+        <a href="#download-content"><i class="fas fa-arrow-circle-down fa-5x"></i></a>
+      </div>
 
-        <div class="col-6 col-md-4">
-          <div class="app-badges">
-            <h3>ClipClaps</h3>
-            <div>
+      <!-- CONTEÚDO COM CÓDIGO PROMOCIONAL -->
+      <div id="download-content" class="row">
+
+        <div class="promoted-app col-6 col-md-4">
+          <h3>ClipClaps</h3>
+          <div class="row no-gutters">
+            <div class="col-md-6">
               <img src="assets/img/clipclaps.jpg" alt="Logotipo do aplicativo Click Clap">
             </div>
-            <div>
+            <div class="col-md-6 d-flex flex-column justify-content-around pl-2">
               <span>
                 Use o código: KGHAK20
               </span>
+              <a href="">
+                <img src="assets/img/google-play-badge.png" alt="">
+              </a>
+              <a href="">
+                <img src="assets/img/app-store-badge.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
 
+      </div>
+
+      <!-- CONTEÚDO SEM CÓDIGO PROMOCIONAL -->
+      <div id="download-content" class="row">
+
+        <div class="promoted-app col-6 col-md-4">
+          <h3>ClipClaps</h3>
+          <div class="row no-gutters">
+            <div class="col-md-6">
+              <img src="assets/img/clipclaps.jpg" alt="Logotipo do aplicativo Click Clap">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-around pl-2">
+              <span>
+                Use o código: ---
+              </span>
               <a href="">
                 <img src="assets/img/google-play-badge.png" alt="">
               </a>
@@ -113,21 +143,22 @@
               <label for="txtName">
                 Nome
               </label>
-              <input id="txtName" type="text" class="form-control" placeholder="Seu nome">
+              <input id="txtName" name="contact_name" type="text" class="form-control" placeholder="Seu nome">
             </div>
 
             <div class="form-group">
               <label for="txtEmail">
                 E-mail
               </label>
-              <input id="txtEmail" type="email" class="form-control" placeholder="exemplo@email.com">
+              <input id="txtEmail" name="contact_email" type="email" class="form-control"
+                placeholder="exemplo@email.com">
             </div>
 
             <div class="form-group">
               <label for="txtAssunto">
                 Assunto
               </label>
-              <input id="txtAssunto" type="text" class="form-control" placeholder="Assunto">
+              <input id="txtAssunto" name="email_subject" type="text" class="form-control" placeholder="Assunto">
             </div>
           </div>
 
@@ -136,7 +167,7 @@
               <label for="taMessage">
                 Mensagem
               </label>
-              <textarea class="form-control" id="taMessage" cols="30" rows="6"
+              <textarea class="form-control" id="taMessage" name="message" cols="30" rows="6"
                 placeholder="Escreva aqui sua mensagem"></textarea>
             </div>
             <button type="submit" id="form-submition-btn" class="btn btn-primary" style="width: 100%;">
@@ -149,20 +180,20 @@
     </div>
   </section>
 
-  <footer id="social-section" class="justify-content-center align-items-center">
+  <footer id="social-section" class="flex-column justify-content-center align-items-center">
     <div class="social-pannel">
-      <a href="#" class="d-none"><i id="i-facebook" class="fab fa-facebook fa-2x"></i></a>
-     
+      <!-- <a href="#" class="d-none"><i id="i-facebook" class="fab fa-facebook fa-2x"></i></a>
+      <a href="#" class="d-none"><i id="i-twitter" class="fab fa-twitter fa-2x"></i></a> -->
+
       <a href="https://www.instagram.com/uptoupcanal/">
         <i id="i-instagram" class="fab fa-instagram fa-2x"></i>
       </a>
-     
-      <a href="#" class="d-none><i id="i-twitter" class="fab fa-twitter fa-2x"></i></a>
-    
+
       <a href="https://www.youtube.com/channel/UCqkpS5t_w4yMPS17qQoHZBQ">
         <i id="i-youtube" class="fab fa-youtube fa-2x"></i>
       </a>
     </div>
+    <span><a href="#">Política de Privacidade</a></span>
   </footer>
 </body>
 
@@ -172,5 +203,6 @@
   integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="assets/js/send-email.js"></script>
 
 </html>
