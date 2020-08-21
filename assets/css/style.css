@@ -3,7 +3,8 @@ body {
   color: #141414;
 }
 
-header, nav {
+header,
+nav {
   background-color: #FEDE0D;
 }
 
@@ -52,24 +53,27 @@ footer {
   margin-bottom: 1rem;
 }
 
-.promoted-app, .promoted-app img, .promoted-app span {
+.promoted-app,
+.promoted-app img,
+.promoted-app span {
   width: 100%;
   margin: 0;
   padding-top: .5em;
-}
-
-.promoted-app span {
-  text-align: center;
 }
 
 .promoted-app {
   padding-top: 1em;
 }
 
+.promotional-code span {
+  display: block;
+  text-align: center;
+}
 
 .row .col-lg-6 {
   padding: 0;
 }
+
 .row .app-badges {
   display: flex;
   flex-direction: column;
