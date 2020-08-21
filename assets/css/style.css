@@ -5,6 +5,7 @@ body {
 
 header, nav {
   background-color: #FEDE0D;
+  height: 75px;
 }
 
 a {
