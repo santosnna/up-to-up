@@ -68,6 +68,7 @@ footer {
 .promotional-code span {
   display: block;
   text-align: center;
+  padding-top: 0;
 }
 
 .row .col-lg-6 {
