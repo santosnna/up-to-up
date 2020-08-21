@@ -1,3 +1,6 @@
+/* 
+#################### ELEMENTS ####################
+ */
 body {
   font-family: 'Open Sans', sans-serif;
   color: #141414;
@@ -48,6 +51,11 @@ footer {
   display: flex;
 }
 
+/* 
+#################### CLASSES ####################
+ */
+
+ /* download-section */
 .display-4 {
   line-height: 1;
   margin-bottom: 1rem;
@@ -104,11 +112,13 @@ footer {
   padding-left: .5em;
 }
 
+/* about-section */
 .video {
   width: 100%;
   height: 260px;
 }
 
+/* social-section */
 .social-pannel {
   border-top: 1px solid rgba(0, 0, 0, 0.4);
   padding: 1.25em 0 1.25em;
@@ -128,6 +138,10 @@ footer {
   border-color: #ff0a33;
 }
 
+/* 
+#################### IDs ####################
+*/
+/* download-section */
 #cta {
   display: flex;
   flex-direction: column;
@@ -140,6 +154,7 @@ footer {
   padding-bottom: .5em;
 }
 
+/* contact-section */
 #contact-section {
   background-color: #ebebeb;
 }
@@ -148,6 +163,7 @@ footer {
   width: 100%;
 }
 
+/* social-section */
 #i-facebook {
   color: #3b5998;
 }
