@@ -5,6 +5,9 @@ body {
 
 header, nav {
   background-color: #FEDE0D;
+}
+
+header {
   height: 75px;
 }
 
