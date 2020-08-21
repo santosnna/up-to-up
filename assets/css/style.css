@@ -71,7 +71,7 @@ footer {
   padding-top: 0;
 }
 
-.row .col-lg-6 {
+.row .col-lg-6, .row .col-6 {
   padding: 0;
 }
 
