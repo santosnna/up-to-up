@@ -27,6 +27,5 @@ app.use('/', routes({
 
 app.listen(port, () => {
   // eslint-disable-next-line no-console
-  console.log(appsService);
   console.log(`Express server started on port ${port}!`);
 });
