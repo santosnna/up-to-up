@@ -1,0 +1,4 @@
+# Ignore Word documents #
+*docx
+# Ignore the nodule_modules folder #
+/nodule_modules

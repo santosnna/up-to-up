@@ -1,0 +1,59 @@
+<!-- ### contact-section -->
+<section id="contact-section">
+  <div class="container">
+    <h2>Contato</h2>
+    <p>
+      Dúvidas, reclamações ou sugestões? Fale conosco.
+    </p>
+
+    <!-- contact-form -->
+    <form id="contact-form" method="POST">
+      <div class="row">
+
+        <!-- input fields -->
+        <div class="col-12 col-md-4">
+          <!-- name -->
+          <div class="form-group">
+            <label for="txtName">
+              Nome
+            </label>
+            <input id="txtName" name="contact_name" type="text" class="form-control" placeholder="Seu nome">
+          </div> <!-- /.form-group -->
+
+          <!-- e-mail -->
+          <div class="form-group">
+            <label for="txtEmail">
+              E-mail
+            </label>
+            <input id="txtEmail" name="contact_email" type="email" class="form-control" placeholder="exemplo@email.com">
+          </div> <!-- /.form-group -->
+
+          <!-- subject -->
+          <div class="form-group">
+            <label for="txtAssunto">
+              Assunto
+            </label>
+            <input id="txtAssunto" name="email_subject" type="text" class="form-control"
+              placeholder="Motivo do contato">
+          </div> <!-- /.form-group -->
+        </div> <!-- /.col-12 .col-md-4 -->
+
+        <!-- message -->
+        <div class="col-12 col-md-8">
+          <!-- text area -->
+          <div class="form-group">
+            <label for="taMessage">
+              Mensagem
+            </label>
+            <textarea class="form-control" id="taMessage" name="message" cols="30" rows="6"
+              placeholder="Escreva aqui sua mensagem"></textarea>
+          </div> <!-- /.form-group -->
+          <button type="submit" id="form-submition-btn" class="btn btn-primary" style="width: 100%;">
+            Enviar
+          </button>
+        </div> <!-- /.col-12 .col-md-8 -->
+
+      </div> <!-- /.row -->
+    </form> <!-- /#contact-form -->
+  </div> <!-- /.container -->
+</section> <!-- /#contact-section -->

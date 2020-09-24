@@ -1,0 +1,39 @@
+{
+  "apps": [
+    {
+      "name": "AttaPoll",
+      "image": "attapoll.png",
+      "promoCode": "---",
+      "playStoreLink": "https://play.google.com/store/apps/details?id=com.requapp.requ",
+      "appStoreLink": ""
+    },
+    {
+      "name": "BuzzBreak",
+      "image": "buzzbreak.png",
+      "promoCode": "B1700962",
+      "playStoreLink": "https://play.google.com/store/apps/details?id=news.buzzbreak.android",
+      "appStoreLink": ""
+    },
+    {
+      "name": "ClipClaps",
+      "image": "clipclaps.png",
+      "promoCode": "KGHAK20",
+      "playStoreLink": "https://play.google.com/store/apps/details?id=com.sanhe.clipclaps",
+      "appStoreLink": ""
+    },
+    {
+      "name": "Gold Mining",
+      "image": "goldmining.png",
+      "promoCode": "YELAD22",
+      "playStoreLink": "https://play.google.com/store/apps/details?id=com.idleminer.mining",
+      "appStoreLink": ""
+    },
+    {
+      "name": "TikTok",
+      "image": "tiktok.png",
+      "promoCode": "294734848",
+      "playStoreLink": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically",
+      "appStoreLink": ""
+    }
+  ]
+}
