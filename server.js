@@ -15,7 +15,6 @@ if (port == null || port === "") {
 // const port = 3002;
 
 const dsn =
-  "mongodb+srv://uptoup:ponterasa165@uptoup.3s1kf.mongodb.net/uptoup?retryWrites=true&w=majority";
 // const dsn = "mongodb://localhost:37017/uptoup";
 
 mongoose
