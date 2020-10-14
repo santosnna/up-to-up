@@ -8,8 +8,12 @@ const routes = require("./routes");
 
 const app = express();
 
-const port = 3002;
-// const port = 3000;
+let port = process.env.PORT;
+if (port == null || port === "") {
+  port = 3002;
+}
+// const port = 3002;
+
 const dsn =
   "mongodb+srv://uptoup:ponterasa165@uptoup.3s1kf.mongodb.net/uptoup?retryWrites=true&w=majority";
 // const dsn = "mongodb://localhost:37017/uptoup";
