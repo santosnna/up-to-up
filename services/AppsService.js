@@ -1,44 +1,33 @@
-const fs = require('fs');
-const util = require('util');
+const AppModel = require("../models/App");
 
-const readFile = util.promisify(fs.readFile);
-
-class AppsServices {
-  constructor(datafile) {
-    this.datafile = datafile;
-  }
-
-  async getApp(name) {
-    const data = await this.getData();
-    const app = data.find((elm) => {
-      return elm.name === name;
-    })
-    if (!name) return null;
-    return {
-      name: app.name,
-      image: app.image,
-      promoCode: app.promoCode,
-      playStoreLink: app.playStoreLink,
-      appStoreLink: app.appStoreLink
-    }
-  }
-
-  async getList() {
-    const data = await this.getData();
-    return data.map((app) => {
-      return {
-        name: app.name,
-        image: app.image,
-        promoCode: app.promoCode,
-        playStoreLink: app.playStoreLink,
-        appStoreLink: app.appStoreLink
-      }
-    })
-  }
-
-  async getData() {
-    const data = await readFile(this.datafile, 'UTF-8');
-    return JSON.parse(data).apps;
-  }
+async function getAll() {
+  return AppModel.find({});
 }
-module.exports = AppsServices;
+
+async function getOne(appId) {
+  return AppModel.findOne({ _id: appId });
+}
+
+async function create(data) {
+  const app = new AppModel(data);
+  return app.save();
+}
+
+async function update(appId, data) {
+  const app = await getOne(appId);
+
+  if (!app) throw new Error("App doesn't exist");
+
+  Object.keys(data).forEach((key) => {
+    app[key] = data[key];
+  });
+
+  return app.save();
+}
+
+module.exports = {
+  getAll,
+  getOne,
+  create,
+  update,
+};
